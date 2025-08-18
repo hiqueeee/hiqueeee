@@ -38,10 +38,6 @@
 	    
 	    //saída
 	    System.out.println("ALERTA :: PESO MAXIMO ATINGIDO!! ::");
-	    
-	    
-	   
-	   } 
-	    
+	    } 
 	}           
 }
