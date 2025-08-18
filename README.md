@@ -1,35 +1,47 @@
-- 👋 Hi, I’m @hiqueeee
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m loofunction ehParOuImpar(numero: number): string {
-    return numero % 2 === 0 ? "Par" : "Ímpar";
+	    //variaveis
+	    double nota1, nota2, media = 0.0;
+	    Scanner tec = new Scanner(System.in);
+	    
+	    //entradas
+	    System.out.println(" :: CALCULADORA DE MÉDIA ESCOLAR ::..");
+	    System.out.print("Digite a nota1: ");
+	    nota1 = tec.nextDouble();
+	    System.out.print("Digite a nota2: ");
+	    nota2 = tec.nextDouble();
+	    
+	    
+	    //processamento
+	    media = (nota1 + nota2) / 2;
+	    
+	    //saidas
+	    if (media >= 6.0) {
+	        System.out.println("Média " +  media + " - APROVADO!!");
+	} else {
+	        System.out.println("Média " + media + "- REPROVADO. ");
+	   } 
+	    
+	}
 
-
+    
 }
-console.log("O número 7 é:", ehParOuImpar(7));
-console.log("O número 10 é:", ehParOuImpar(10));
-
-function calcularFatorial(n: number): number {
-    if (n === 0 || n === 1) {
-        return 1;
-    }
-    return n * calcularFatorial(n - 1);
+    public class Main
+    {
+	public static void main(String[] args) {
+	    //variaveis   
+	    double peso = 0.00;
+	    
+	    //entradas
+	    peso = 450.00;
+	    
+	    //processamento
+	    if (peso > 500.00) {
+	    
+	    //saída
+	    System.out.println("ALERTA :: PESO MAXIMO ATINGIDO!! ::");
+	    
+	    
+	   
+	   } 
+	    
+	}           
 }
-console.log("Fatorial de 5:", calcularFatorial(5));
-console.log("Fatorial de 7:", calcularFatorial(7));
-
-
-
-
-
-
-
-king to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-hiqueeee/hiqueeee is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
