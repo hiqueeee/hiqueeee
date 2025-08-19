@@ -67,3 +67,102 @@ public class Main
 	    }
 	}
 }
+import java.util.Scanner;
+
+public class MediaAluno {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Digite a primeira nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a segunda nota: ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.print("Digite a terceira nota: ");
+        double nota3 = scanner.nextDouble();
+
+        System.out.print("Digite a quarta nota: ");
+        double nota4 = scanner.nextDouble();
+
+       
+        double media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        
+        if (media >= 5) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+
+        
+        System.out.print("Digite o custo mensal de material escolar (em R$): ");
+        double custoMaterial = scanner.nextDouble();
+
+        System.out.printf("Custo mensal de material: R$ %.2f\n", custoMaterial);
+
+        scanner.close();
+		public class Main
+{
+	public static void main(String[] args) {
+        import java.util.Scanner;
+
+    public class EquacaoSegundoGrau {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Digite o valor de a: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Digite o valor de b: ");
+        double b = scanner.nextDouble();
+
+        System.out.print("Digite o valor de c: ");
+        double c = scanner.nextDouble();
+
+        
+        if (a != 0 && b != 0 && c != 0) {
+            
+            double delta = (b * b) - (4 * a * c);
+            System.out.println("Delta = " + delta);
+
+            if (delta < 0) {
+                System.out.println("Sem raízes reais.");
+            } else if (delta == 0) {
+                double x = -b / (2 * a);
+                System.out.println("Existe uma raiz real : x = " + x);
+            } else {
+                double raizDelta = Math.sqrt(delta); 
+                double x1 = (-b + raizDelta) / (2 * a);
+                double x2 = (-b - raizDelta) / (2 * a);
+                System.out.println("Existem duas raízes reais:");
+                System.out.println("x1 = " + x1);
+                System.out.println("x2 = " + x2);
+            }
+
+            
+            System.out.print("Digite o valor base para cálculo dos descontos (R$): ");
+            double valorBase = scanner.nextDouble();
+
+            double ip = valorBase * 0.11;       
+            double inss = valorBase * 0.09;     
+            double planoSaude = valorBase * 0.08; 
+
+            double totalDescontos = ip + inss + planoSaude;
+            double valorLiquido = valorBase - totalDescontos;
+
+            System.out.printf("Desconto IP: R$ %.2f\n", ip);
+            System.out.printf("Desconto INSS: R$ %.2f\n", inss);
+            System.out.printf("Desconto Plano de Saúde (8%%): R$ %.2f\n", planoSaude);
+            System.out.printf("Valor líquido após descontos: R$ %.2f\n", valorLiquido);
+
+        } else {
+            System.out.println("Equação incompleta: os coeficientes a, b e c devem ser diferentes de zero.");
+        }
+
+        scanner.close();
+    }
+}
+
+	}
