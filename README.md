@@ -166,3 +166,47 @@ public class MediaAluno {
 }
 
 	}
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+       
+        //variaveis
+        int ra;
+        String nome, email, telefone;
+        double cpf, peso, altura, mensalidade;
+        byte idade, numirmaos;
+        char sexo;
+        Scanner leitura = new Scanner(System.in);   
+       
+        //entradas
+        ra = leitura.nextInt();
+        nome = leitura.next();
+        cpf = leitura.nextDouble();
+        idade = leitura.nextByte();
+        sexo = leitura.next().charAt(0);
+        peso = leitura.nextDouble();
+        altura = leitura.nextDouble();
+        mensalidade = leitura.nextDouble();
+        //numirmaos = leitura.nextByte();
+        //email = leitura.nextLine();
+        //telefone = leitura.nextLine();
+       
+       
+       //processamentos
+
+       //saídas 
+       System.out.println("Ra:" + ra);
+        System.out.println("Nome: " + nome);
+        System.out.println("Cpf: " + cpf);
+        System.out.println("Idade:" + idade);
+        System.out.println("Sexo:" + sexo);
+        System.out.println("Peso:" + peso);
+        System.out.println("Altura:" + altura);
+        System.out.println("Mensalidade:" + mensalidade);
+
+    }
+}	 
+	
+	
